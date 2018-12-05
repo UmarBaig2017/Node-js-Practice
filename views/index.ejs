@@ -1,0 +1,27 @@
+<% include partials/header%>
+    <form method="POST" action="users/add">
+    <h1> <%=tittle%></h1>
+        <% if (errors!= undefined){ %>
+            <ul>
+                    <%  errors.forEach(function(error){ %>
+                        <li> <%= error.msg %>  </li>
+                    
+                        <%}) %>
+            </ul> 
+        }
+
+    <h1>Add Form</h1>
+   First Name: <input type="text" name="First_name"/> <br/>
+  Last Name: <input type="text" name="Last_name"/> <br/>
+  Email: <input type="email" name="Email"/> <br/>
+   <input type="submit" name="submit">
+</form>
+
+    <ul>
+    <%
+      
+
+ <%   }) %>
+</ul>
+    <% include partials/footer%>
+ 
